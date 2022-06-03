@@ -41,7 +41,7 @@ First time using android studio, so the whole flow of things was really confusin
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2022] [FBU]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
