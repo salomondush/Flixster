@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.myapplication.MovieDetailsActivity;
 import com.example.myapplication.R;
+import com.example.myapplication.databinding.ItemMovieBinding;
 import com.example.myapplication.models.Movie;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 
@@ -28,6 +29,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
     Context context;
     List<Movie> movies;
+    ItemMovieBinding binding;
 
     public MovieAdapter(Context context, List<Movie> movies) {
         this.context = context;
@@ -38,8 +40,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View movieView = LayoutInflater.from(context).inflate(R.layout.item_movie, parent, false);
-        return new ViewHolder(movieView);
+        binding = ItemMovieBinding.inflate(LayoutInflater.from(context));
+        return new ViewHolder(binding.getRoot());
     }
 
     // Involves populating data into the item through holder
@@ -65,9 +67,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         public ViewHolder(@NonNull View itemView){
             super(itemView);
-            tvTitle = itemView.findViewById(R.id.tvTitle);
-            tvOverview = itemView.findViewById(R.id.tvOverview);
-            ivPoster = itemView.findViewById(R.id.ivPoster);
+            tvTitle = binding.tvTitle;
+            tvOverview = binding.tvOverview;
+            ivPoster = binding.ivPoster;
 
             itemView.setOnClickListener(this);
         }
