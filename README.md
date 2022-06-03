@@ -30,6 +30,9 @@ The following *stretch* features are implemented:
 The following *additional* features are implemented:
 
 * [ ] List anything else that you can get done to improve the app functionality!
+- More navigation options
+- Search bar for movies
+- An option to view reviews
 
 
 ## Notes
