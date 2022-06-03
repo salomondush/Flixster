@@ -1,5 +1,9 @@
 *Flixster* shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
+## SETUP
+#You'll need to configure your api key and secrets:
+- Create a new folder apikey.properties
+- create an entry using the `API_KEY` variable constant: your api key variable should be sorrounded by double quotes
 
 ## User Stories
 
@@ -37,7 +41,7 @@ First time using android studio, so the whole flow of things was really confusin
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2022] [FBU]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
