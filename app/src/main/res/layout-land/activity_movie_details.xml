@@ -48,8 +48,8 @@
 
     <ImageView
         android:id="@+id/viewPoster"
-        android:layout_width="120dp"
-        android:layout_height="160dp"
+        android:layout_width="320dp"
+        android:layout_height="180dp"
         tools:srcCompat="@tools:sample/avatars" />
 
 </RelativeLayout>

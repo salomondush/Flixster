@@ -114,7 +114,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             Glide.with(context).load(imageUrl)
                     .placeholder(placeHolder)
                     .error(R.drawable.flicks_movie_placeholder)
-                    .centerCrop() // fixme: not working
+                    .centerCrop()
                     .transform(new RoundedCorners(radius))
                     .into(ivPoster);
         }

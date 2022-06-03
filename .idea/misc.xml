@@ -5,9 +5,11 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.13420787083753785" />
         <entry key="app/src/main/res/drawable/myrec.xml" value="0.3885" />
+        <entry key="app/src/main/res/layout-land/activity_movie_details.xml" value="0.17857142857142858" />
         <entry key="app/src/main/res/layout-land/item_movie.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3585448088469329" />
-        <entry key="app/src/main/res/layout/activity_movie_details.xml" value="0.5307113647460937" />
+        <entry key="app/src/main/res/layout/activity_movie_details.xml" value="0.35754394531249994" />
+        <entry key="app/src/main/res/layout/activity_movie_trailer.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_movie.xml" value="0.2635416666666667" />
       </map>
     </option>

@@ -11,6 +11,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.example.myapplication.databinding.ActivityMovieDetailsBinding;
 import com.example.myapplication.models.Movie;
 
@@ -68,9 +69,12 @@ public class MovieDetailsActivity extends AppCompatActivity {
             placeHolder = R.drawable.flicks_movie_placeholder;
         }
 
+        int radius = 30; // corner radius, higher value = more rounded
         Glide.with(MovieDetailsActivity.this).load(imageUrl)
                 .placeholder(placeHolder)
                 .error(R.drawable.flicks_movie_placeholder)
+                .centerCrop()
+                .transform(new RoundedCorners(radius))
                 .into(viewPoster);
     }
 }
