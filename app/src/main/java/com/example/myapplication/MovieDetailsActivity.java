@@ -25,6 +25,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
     // the view objects
     TextView tvTitle;
     TextView tvOverview;
+    TextView mDate;
     RatingBar rbVoteAverage;
     ImageView viewPoster;
     ActivityMovieDetailsBinding binding;
@@ -42,6 +43,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
         tvOverview = binding.tvOverview;
         rbVoteAverage = binding.rbVoteAverage;
         viewPoster = binding.viewPoster;
+        mDate = binding.mDate;
 
         // unwrap the movie passed in via intent, using its simple name as a key
         movie = Parcels.unwrap(getIntent().getParcelableExtra(Movie.class.getSimpleName()));
@@ -50,6 +52,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
         // set the title and the overview
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
+        mDate.setText(movie.getmDate());
 
         // convert rating from a 10 scale to a 5 scale
         float voteAverage = movie.getVoteAverage().floatValue();

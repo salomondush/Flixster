@@ -64,12 +64,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         TextView tvTitle;
         TextView tvOverview;
         ImageView ivPoster;
+        TextView mDate;
 
         public ViewHolder(@NonNull View itemView){
             super(itemView);
             tvTitle = binding.tvTitle;
             tvOverview = binding.tvOverview;
             ivPoster = binding.ivPoster;
+            mDate = binding.mDate;
 
             itemView.setOnClickListener(this);
         }
@@ -94,6 +96,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         public void bind(Movie movie) {
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
+            mDate.setText(movie.getmDate());
 
             String imageUrl;
             int placeHolder;

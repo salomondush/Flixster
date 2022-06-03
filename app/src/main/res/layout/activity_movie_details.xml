@@ -15,9 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="false"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="13dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
-        android:layout_marginRight="10dp"
         android:layout_toEndOf="@+id/viewPoster"
         android:text="Movie Title"
         android:textAppearance="@android:style/TextAppearance.Large" />
@@ -26,10 +25,10 @@
         android:id="@+id/tvOverview"
         android:layout_width="271dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvTitle"
+        android:layout_below="@+id/mDate"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/viewPoster"
         android:text="TextView" />
 
@@ -40,8 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvOverview"
         android:layout_alignParentLeft="false"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/viewPoster"
         android:numStars="5"
         android:stepSize="0.5" />
@@ -51,5 +50,15 @@
         android:layout_width="120dp"
         android:layout_height="160dp"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/mDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/viewPoster"
+        android:text="TextView" />
 
 </RelativeLayout>

@@ -19,6 +19,7 @@ The following *required* functionality is completed:
 The following *stretch* features are implemented:
 
 * [x] Improved the user interface by experimenting with styling and coloring.
+- Added date strings for both movie view and movie details view with orientation support
 - Added poster view on the movie details page
 - Added some padding and margin for a better separation and view
 - Added corresponding render for landscape and portrait for the movie details view (was not required)
