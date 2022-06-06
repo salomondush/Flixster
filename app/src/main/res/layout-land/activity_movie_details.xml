@@ -14,12 +14,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="false"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_toEndOf="@+id/viewPoster"
-        android:text="Movie Title"
+        android:text="@string/movie_title"
         android:textAppearance="@android:style/TextAppearance.Large" />
 
     <TextView
@@ -27,12 +27,12 @@
         android:layout_width="271dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mDate"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
-        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
         android:layout_toEndOf="@+id/viewPoster"
-        android:text="TextView" />
+        android:text="@string/movie_description" />
 
     <RatingBar
         android:id="@+id/rbVoteAverage"
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvOverview"
-        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/viewPoster"
@@ -51,7 +51,8 @@
         android:id="@+id/viewPoster"
         android:layout_width="320dp"
         android:layout_height="180dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/movie_poster" />
 
     <TextView
         android:id="@+id/mDate"
@@ -61,6 +62,6 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/viewPoster"
-        android:text="TextView" />
+        android:text="@string/release_date" />
 
 </RelativeLayout>

@@ -11,7 +11,8 @@
         android:id="@+id/ivPoster"
         android:layout_width="320dp"
         android:layout_height="180dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/movie_description" />
 
     <TextView
         android:id="@+id/tvTitle"
@@ -19,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:text="TextView"
+        android:text="@string/movie_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         tools:text="Fantastic Beasts: The Secrets of Dumbledore" />
 
@@ -41,5 +42,5 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:text="TextView" />
+        android:text="@string/release_date" />
 </RelativeLayout>
